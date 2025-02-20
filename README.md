@@ -1,2 +1,2 @@
-# ITMD541-Projects
-This repository contains the lab work of ITMD 541 course
+# Web-App-Projects
+This repository contains the lab work/Projects of ITMD 541 course
