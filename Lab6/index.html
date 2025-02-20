@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise and Sunset Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="loadingSpinner" class="loading-spinner" style="display: none;"></div>
+
+    <div class="container">
+        <div class="header">
+            <img src="images/icon.png" alt="Icon" class="header-icon" style="margin-right: 1cm;">
+            <h1>Sunrise and Sunset Dashboard</h1>
+        </div>
+
+            <p id="instructionMessage">Choose your current location, select a default from the list, or manually input a location.</p>
+
+        <div class="search-bar">
+            <button id="geoLocation">
+    <img src="images/location.png" alt="Current Location Icon" style="width: 16px; height: 16px; vertical-align: middle;">
+    Use My Current Location
+</button>
+            <select id="presetLocations">
+                <option value="">Select a Location</option>
+                <option value="33.72148,73.04329">Islamabad, Pakistan</option>
+                <option value="48.85661,2.35222">Paris, France</option>
+                <option value="55.67594,12.56553">Copenhagen, Denmark</option>
+                <option value="18.51957,73.85535">Pune, India</option>
+                <option value="40.05832,-74.40566">New Jersey, USA</option>
+                <option value="47.35954,8.63565">Zürich, Switzerland</option>
+                <option value="38.907192,-77.036873">Washington DC, USA</option>
+                <option value="19.07283,72.88261">Mumbai, India</option>
+                <option value="34.052235,-118.243683">Los Angeles, USA</option>
+                <option value="40.712776,-74.005974">New York, USA</option>
+                <option value="51.507351,-0.127758">London, UK</option>
+                <option value="35.689487,139.691711">Tokyo, Japan</option>
+            </select>
+            <input type="text" id="searchLocation" placeholder="Search Location">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <div id="dataDisplay">
+            <div id="todayData" class="data-column"></div>
+            <div id="tomorrowData" class="data-column"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© Harshal Sawant for ITMD 541</p>
+            <p>Powered by 
+                <a href="https://SunriseSunset.io" target="_blank"> SunriseSunset.io</a> 
+                and 
+                <a href="https://geocode.maps.co/" target="_blank"> Geocode Maps</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
